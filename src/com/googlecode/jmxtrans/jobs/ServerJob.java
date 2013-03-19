@@ -33,9 +33,9 @@ public class ServerJob implements Job {
 
 		JMXConnector conn = null;
 		try {
-            if (server.getLocalMBeanServer() == null) {
+            //if (server.getLocalMBeanServer() == null) {
                 conn = (JMXConnector) pool.borrowObject(server);
-            }
+            //}
 			JmxUtils.processServer(server, conn);
 		} catch (Exception e) {
 			log.error("Error", e);

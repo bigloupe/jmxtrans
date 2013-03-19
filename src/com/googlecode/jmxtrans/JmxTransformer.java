@@ -135,7 +135,7 @@ public class JmxTransformer implements WatchedCallback {
 			try {
 				this.startupScheduler();
 
-				this.startupWatchdir();
+				//this.startupWatchdir();
 
 				this.setupObjectPooling();
 
